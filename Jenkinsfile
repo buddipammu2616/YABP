@@ -10,8 +10,10 @@ pipeline{
                 
                 script{
                     
-                    git branch: 'master', url: 'https://github.com/vikash-kumar01/mrdevops_javaapplication.git'
+                    git branch: 'master', url: 'https://github.com/buddipammu2616/YABP.git'
                 }
             }
         }
+    }
+}
       
