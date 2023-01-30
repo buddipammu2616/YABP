@@ -1,6 +1,9 @@
 pipeline{
     
-    agent any 
+    agent any
+    environment {
+        PATH = "/opt/maven3.6/bin/:$PATH"
+    }
     
     stages {
         
@@ -14,6 +17,12 @@ pipeline{
                 }
             }
         }
+        stage('build code') {
+            steps {
+                sh 'mvn clean install'
+            }
+        }
+        
     }
 }
       
